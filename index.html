@@ -10,59 +10,199 @@
     <link rel="icon" href="/static/images/popcorn.svg" />
 </head>
 <style>
-  .firstline
-  {
-    position: absolute;
-    top: 60px;
-    color:#000080;
-    font-size:50px
-   }
-   .product-video-container
-   {
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
 
-  right: 0;
-  bottom: 0;
-  width: 100%;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
 
-   }
-
+footer {
+   background-color: #555;
+    color: white;
+	 padding: 15px;
+	  position: absolute; 
+	 }
 </style>
 <body>
+<img src="https://drive.google.com/uc?export=view&id=1U9A6gkHlrga5SMuOWrktEVcgD9ZuAv8p" id="bg" alt="">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/home">
-    AquaMeen
-  </a>
+  
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
 
-      <li class="nav-item active">
-        <a class="nav-link active">Contact us on 12345678</a>
-      </li>
-    </ul>
+
+	  	<ul class="navbar-nav ml-auto">
+	  		<li class="nav-item notverified">
+	    		<a class="nav-link" href="/Signup">Sign Up</a>
+	    	</li>
+	    	<li class="notverified">
+	    		<a class="nav-link" href="/Signin">Sign in</a>
+	    	</li>
+          <span class="glyphicon glyphicon-user"></span>
+           <span class="navbar-text white-text fa fa-user verified" id="verifieduser">tets
+          </span>
+	    </ul>
+
+
+
   </div>
-                   
 
+  <!-- <div>
+	  <form class="form-inline mr-sm-2">
+	  	<ul class="navbar-nav">
+	  		<li class="nav-item">
+	    		<a class="nav-link" href="signup">Sign Up</a>
+	    	</li>
+	    	<li>
+	    		<a class="nav-link" href="signin">Sign in</a>
+	    	</li>
+	    </ul>
+	    </form>
+  </div> -->
 </nav>
 
-<div class="bisleri-video-background-block" data-product-video="https://www.bisleri.com/sites/default/files/2018-05/bisleri.mp4">
-  <video class="product-video-container " src="https://www.bisleri.com/sites/default/files/2018-05/bisleri.mp4" preload="auto" muted="" autoplay="" loop=""></video>
+
+<div class="container">
+	<!-- <div>
+		<form action = 'http://localhost:5000/result' method = 'POST'>
+		<br><input type="text" placeholder="First Name" name='fname' id = 'fname'></br>
+
+		<input type="text" placeholder="Last Name" name='lname' id = 'lname'>
+
+		<br><input type="email" placeholder="Email Address" name='email' id = 'email'></br>
+
+		<input type="tel" placeholder="Phone Number" name='pno' id = 'pno'>
+		<br><input type="submit" value="Create"></br>
+		<p th:text =" $(fname) "></p>
+		<p>hello</p>
+		</form>
+	</div> -->
+
+<!-- <div>
+
+	<form action = 'http://localhost:5000/result' method = 'POST'>
+  <div class="form-group">
+    <label for="exampleInputEmail1">First Name</label>
+    <input type="text" class="form-control" name = 'fname' id = 'fname' aria-describedby="first name" placeholder="Enter First Name">
+    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+
+
+<!-- </div>
+
+
+
+    <div class="card" style="width: 18rem;"> -->
+
+
+  <div class="card-group">
+    <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="https://drive.google.com/uc?export=view&id=1aKN3sddUoa9BNLMUnWPaK7-MovSCjkhO" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">My Baby</h5>
+          <p class="card-text">On this day You became mine forever.</p>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+  <div class="card">
+    <img class="card-img-top" src="https://drive.google.com/uc?export=view&id=14wuCRt4NjCE1DrNrgQgppoGsLwHARif7" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">My Love</h5>
+      <p class="card-text">I smile every time I think of the day we met.</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <div class="card">
+    <img class="card-img-top" src="https://drive.google.com/uc?export=view&id=1xAuEzqH5XSWNFoyoBTWq6zmbQAaY_MNo" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">My Queen</h5>
+      <p class="card-text">You came into my life and made me a man.</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  </div>
 </div>
-<h3>Made with ♥ by Vikash Kumar Ram</h3>
-<div class="firstline" ><h3>I Love U Mona From Vikash Kumar Ram</h3><p>Welcome to AquaMeen</p>
-  <p>One of the best manufacturer of packed drinking water with</p>
-  <p">60 Thousand+ satisfied customers</p>
-  <p>TO place order contact 9343749376</p>
+  <div class="row">
+  <div class="col-md-4">
+  <div class="card">
+    <img class="card-img-top" src="https://drive.google.com/uc?export=view&id=1nevyZRBmpOqb_stPGgA3D_biQ1QgviGq" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">My Rasgulla</h5>
+      <p class="card-text">My babu full of taditional values</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="col-md-4">
+  <div class="card">
+    <img class="card-img-top" src="https://drive.google.com/uc?export=view&id=1zhi-QoRmhQFtqJ3gVXfMqNTDr7ek7DfO" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">My candy</h5>
+      <p class="card-text">I am so lucky that You came in my life</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-md-4">
+  <div class="card">
+    <img class="card-img-top" src="https://drive.google.com/uc?export=view&id=1aL00a-qHSizeFKUXVquCywznP4S1u2Yf" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Darling</h5>
+      <p class="card-text">I hope you will never leave my side</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  </div>
 </div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<footer class="container-fluid text-center">Made with ♥ by Vikash Kumar Ram</footer>
 
 
 </body>
+<script>
+  function getCookie(name) {
+  let cookie = {};
+  document.cookie.split(';').forEach(function(el) {
+    let [k,v] = el.split('=');
+    cookie[k.trim()] = v;
+  })
+  return cookie[name];
+}
 
+console.log(getCookie('user'))
+
+var user = getCookie('user')
+if(user!=null){
+  $('.notverified').hide()
+  $('.verified').show()
+  $('#verifieduser').html("&nbsp;"+user)
+}else{
+
+ $('.notverified').show()
+  $('.verified').hide()
+}
 
 </script>
 </html>
